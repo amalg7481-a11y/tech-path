@@ -520,3 +520,27 @@ summary::marker {
     border-color: #4a6cf7;
     transform: translateY(-2px);
 }
+.recommendations {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.rec-card {
+    display: block;
+    padding: 14px 16px;
+    background: #f9fafc;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1f2d3d;
+    font-weight: 500;
+    border: 1px solid #e6e8ec;
+    transition: 0.25s ease;
+}
+
+.rec-card:hover {
+    background: #007BFF;
+    color: white;
+    transform: translateY(-2px);
+}

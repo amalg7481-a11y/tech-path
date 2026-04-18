@@ -21,11 +21,20 @@ tracks = {
     {"name": "Full Stack Developer", "desc": "Works on both frontend and backend systems."}
 ],
     
-        "recommendations" :[
-            "freecodecamp web development course",
-            "Codecademy HTML/CSS/JS",
-        "MDN Web Docs Tutorials"
-        ]
+        "recommendations": [
+    {
+        "name": "freeCodeCamp Web Development Course",
+        "url": "https://www.freecodecamp.org/learn/"
+    },
+    {
+        "name": "MDN Web Docs (HTML, CSS, JS Guide)",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn"
+    },
+    {
+        "name": "Codecademy HTML/CSS/JS Course",
+        "url": "https://www.codecademy.com/catalog/language/html-css"
+    }
+]
     },
     "uiux": {
         "title": "UI/UX Design",
@@ -43,11 +52,16 @@ tracks = {
     {"name": "UX Designer", "desc": "Improves user experience and usability."},
     {"name": "Product Designer", "desc": "Combines UI + UX to design full products."}
 ],
-        "recommendations": [
-        "Coursera UI/UX Design Specialization",
-        "Figma Learn Resources",
-        "Interaction Design Foundation Courses"
-    ]
+       "recommendations": [
+    {"name": "Coursera UI/UX Design Specialization",
+     "url": "https://www.coursera.org/specializations/ui-ux-design"},
+
+    {"name": "Figma Learn Resources",
+     "url": "https://www.figma.com/resources/learn-design/"},
+
+    {"name": "Interaction Design Foundation Courses",
+     "url": "https://www.interaction-design.org/courses"}
+]
     },
     "cloud": {
         "title": "Cloud Computing",
@@ -64,13 +78,22 @@ tracks = {
     {"name": "Cloud Engineer", "desc": "Builds and manages cloud infrastructure."},
     {"name": "DevOps Engineer", "desc": "Automates deployment and system operations."},
     {"name": "Cloud Architect", "desc": "Designs large-scale cloud systems."}
-]
-        ,
-        "recommendations": [
-        "AWS Training & Certification",
-        "Microsoft Learn Azure Fundamentals",
-        "Google Cloud Training"
-    ]
+],
+     "recommendations": [
+    {
+        "name": "AWS Cloud Practitioner Essentials",
+        "url": "https://aws.amazon.com/training/learn-about/cloud-practitioner/"
+    },
+    {
+        "name": "Microsoft Azure Fundamentals (Learn)",
+        "url": "https://learn.microsoft.com/en-us/training/azure/"
+    },
+    {
+        "name": "Google Cloud Training",
+        "url": "https://cloud.google.com/training"
+    }
+]   
+        
     },
     "data": {
         "title": "Data Science",
@@ -88,11 +111,20 @@ tracks = {
     {"name": "Data Scientist", "desc": "Builds models and extracts insights from data."},
     {"name": "ML Engineer", "desc": "Creates machine learning systems."}
 ],
-          "recommendations": [
-        "Coursera Data Science Specialization",
-        "Kaggle Learn Python & Data Analysis",
-        "DataCamp Data Science Courses"
-    ]
+      "recommendations": [
+    {
+        "name": "Coursera Data Science Specialization",
+        "url": "https://www.coursera.org/specializations/jhu-data-science"
+    },
+    {
+        "name": "Kaggle Learn",
+        "url": "https://www.kaggle.com/learn"
+    },
+    {
+        "name": "DataCamp Python for Data Science",
+        "url": "https://www.datacamp.com/tracks/data-scientist-with-python"
+    }
+]
     },
     "cyber": {
         "title": "Cybersecurity",
@@ -112,11 +144,20 @@ tracks = {
             {"name": "Ethical Hacker", "desc": "Finds vulnerabilities before attackers do."}
 
         ],
-         "recommendations": [
-        "Cybrary Cybersecurity Fundamentals",
-        "TryHackMe Beginner Paths",
-        "Cisco Networking Academy Security Courses"
-    ]
+       "recommendations": [
+    {
+        "name": "TryHackMe Beginner Path",
+        "url": "https://tryhackme.com/path/outline/presecurity"
+    },
+    {
+        "name": "Cisco Networking Academy Security",
+        "url": "https://www.netacad.com/courses/cybersecurity"
+    },
+    {
+        "name": "Cybrary Cybersecurity Basics",
+        "url": "https://www.cybrary.it/"
+    }
+]
     },
     "ai": {
         "title": "AI & Machine Learning",
@@ -134,11 +175,20 @@ tracks = {
     {"name": "AI Developer", "desc": "Creates intelligent systems that simulate human thinking."},
     {"name": "Data Scientist", "desc": "Analyzes data and builds predictive models using AI techniques."}
 ],
-         "recommendations": [
-        "Coursera Machine Learning by Andrew Ng",
-        "fast.ai Practical Deep Learning",
-        "TensorFlow Official Tutorials"
-    ]
+        "recommendations": [
+    {
+        "name": "Machine Learning by Andrew Ng (Coursera)",
+        "url": "https://www.coursera.org/learn/machine-learning"
+    },
+    {
+        "name": "fast.ai Practical Deep Learning",
+        "url": "https://www.fast.ai/"
+    },
+    {
+        "name": "TensorFlow Official Tutorials",
+        "url": "https://www.tensorflow.org/learn"
+    }
+] 
     },
     "mobile": {
         "title": "Mobile Development",
@@ -157,11 +207,20 @@ tracks = {
     {"name": "Mobile Developer", "desc": "Develops cross-platform mobile apps."}
 ],
         
-         "recommendations": [
-        "Udemy Android Development with Kotlin",
-        "Udemy iOS Development with Swift",
-        "Flutter & React Native Official Docs"
-    ]
+        "recommendations": [
+    {
+        "name": "Android Kotlin Course (Udemy)",
+        "url": "https://www.udemy.com/course/android-kotlin-developer/"
+    },
+    {
+        "name": "Apple Swift Learning",
+        "url": "https://developer.apple.com/swift/"
+    },
+    {
+        "name": "Flutter Official Docs",
+        "url": "https://flutter.dev/docs"
+    }
+]
     },
     "it": {
         "title": "IT Support",
@@ -179,11 +238,20 @@ tracks = {
     {"name": "Help Desk Technician", "desc": "Provides technical assistance."},
     {"name": "System Administrator", "desc": "Manages IT systems and networks."}
 ],
-         "recommendations": [
-        "Google IT Support Professional Certificate",
-        "CompTIA A+ Certification Training",
-        "Microsoft Learn IT Fundamentals"
-    ]
+        "recommendations": [
+    {
+        "name": "Google IT Support Certificate",
+        "url": "https://www.coursera.org/professional-certificates/google-it-support"
+    },
+    {
+        "name": "CompTIA A+ Certification",
+        "url": "https://www.comptia.org/certifications/a"
+    },
+    {
+        "name": "Microsoft IT Fundamentals",
+        "url": "https://learn.microsoft.com/en-us/certifications/"
+    }
+]
     },
     "game": {
         "title": "Game Development",
@@ -201,11 +269,20 @@ tracks = {
     {"name": "Game Designer", "desc": "Designs game mechanics and experience."},
     {"name": "Level Designer", "desc": "Creates game levels and environments."}
 ],
-         "recommendations": [
-        "Unity Learn Platform",
-        "Unreal Engine Online Learning",
-        "Udemy Game Development Courses"
-    ]
+      "recommendations": [
+    {
+        "name": "Unity Learn Platform",
+        "url": "https://learn.unity.com/"
+    },
+    {
+        "name": "Unreal Engine Learning",
+        "url": "https://www.unrealengine.com/en-US/onlinelearning-courses"
+    },
+    {
+        "name": "GameDev.tv Courses",
+        "url": "https://www.gamedev.tv/"
+    }
+]
     },
     "iot": {
         "title": "Internet of Things (IoT)",
@@ -223,11 +300,20 @@ tracks = {
     {"name": "Embedded Engineer", "desc": "Works on hardware-software systems."},
     {"name": "IoT Architect", "desc": "Designs smart systems and networks."}
 ],
-        "recommendations": [
-        "Arduino Official Tutorials",
-        "Raspberry Pi Learning Resources",
-        "Coursera IoT Specialization"
-    ]
+       "recommendations": [
+    {
+        "name": "Arduino Official Tutorials",
+        "url": "https://www.arduino.cc/en/Tutorial/HomePage"
+    },
+    {
+        "name": "Raspberry Pi Learning",
+        "url": "https://www.raspberrypi.com/documentation/"
+    },
+    {
+        "name": "Coursera IoT Specialization",
+        "url": "https://www.coursera.org/specializations/internet-of-things"
+    }
+]
     }
 }
 

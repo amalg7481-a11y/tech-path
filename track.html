@@ -48,13 +48,16 @@
             </ul>
         </div>
 
-        <div class="track-card">
+       <div class="track-card">
     <h2>🎓 Recommended Courses & Platforms</h2>
-    <ul>
+
+    <div class="recommendations">
         {% for rec in recommendations %}
-        <li>{{ rec }}</li>
+        <a class="rec-card" href="{{ rec.url }}" target="_blank">
+            {{ rec.name }}
+        </a>
         {% endfor %}
-    </ul>
+    </div>
 </div>
 
     </section>
