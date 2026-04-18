@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="track-page">
+
+    <!-- HERO SECTION -->
+   <section class="track-hero">
+    <h1>{{ name }}</h1>
+    <p>{{ description }}</p>
+
+    <div class="track-meaning">
+        <h3>💡 What is {{ name }}?</h3>
+        <p>{{ meaning }}</p>
+    </div>
+</section>
+
+    <!-- CONTENT SECTION -->
+    <section class="track-content">
+
+        <div class="track-card">
+            <h2>📘 Skills You Will Learn</h2>
+            <ul>
+                {% for skill in skills %}
+<details>
+    <summary>{{ skill.name }}</summary>
+    <p>{{ skill.desc }}</p>
+</details>
+{% endfor %}
+                
+                
+            </ul>
+        </div>
+
+        <div class="track-card">
+            <h2>💼 Possible Careers</h2>
+            <ul>
+                {% for career in careers %}
+<details>
+    <summary>{{ career.name }}</summary>
+    <p>{{ career.desc }}</p>
+</details>
+{% endfor %}
+                
+                
+            </ul>
+        </div>
+
+        <div class="track-card">
+    <h2>🎓 Recommended Courses & Platforms</h2>
+    <ul>
+        {% for rec in recommendations %}
+        <li>{{ rec }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+    </section>
+
+    <div class="back-container">
+        <a href="/" class="back-btn">← Back to Home</a>
+    </div>
+
+</body>
+</html>

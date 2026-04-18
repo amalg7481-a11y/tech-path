@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TechPath Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h1>Find Your Tech Path</h1>
+<div class="quiz-container">
+<form action="/result" method="POST">
+
+    <!-- Q1 -->
+    <h3>1. What do you enjoy most?</h3>
+    <label><input type="radio" name="q1" value="web"> Building websites and apps</label><br>
+    <label><input type="radio" name="q1" value="uiux"> Designing interfaces and visuals</label><br>
+    <label><input type="radio" name="q1" value="game"> Creating games and interactive worlds</label><br>
+    <label><input type="radio" name="q1" value="iot"> Working with smart devices</label><br>
+
+    <!-- Q2 -->
+    <h3>2. What sounds more interesting?</h3>
+    <label><input type="radio" name="q2" value="data"> Finding patterns in data</label><br>
+    <label><input type="radio" name="q2" value="cyber"> Protecting systems from hackers</label><br>
+    <label><input type="radio" name="q2" value="cloud"> Managing cloud systems</label><br>
+    <label><input type="radio" name="q2" value="it"> Fixing computer problems</label><br>
+
+    <!-- Q3 -->
+    <h3>3. What do you prefer?</h3>
+    <label><input type="radio" name="q3" value="uiux"> Creative visuals and design</label><br>
+    <label><input type="radio" name="q3" value="ai"> Logical thinking and problem solving</label><br>
+    <label><input type="radio" name="q3" value="web"> Building websites</label><br>
+    <label><input type="radio" name="q3" value="cyber"> Security and protection systems</label><br>
+
+    <!-- Q4 -->
+    <h3>4. What excites you more?</h3>
+    <label><input type="radio" name="q4" value="web"> Creating web applications</label><br>
+    <label><input type="radio" name="q4" value="mobile"> Building mobile apps</label><br>
+    <label><input type="radio" name="q4" value="cloud"> Working with large systems</label><br>
+    <label><input type="radio" name="q4" value="game"> Making interactive games</label><br>
+
+    <!-- Q5 -->
+    <h3>5. Which task sounds better?</h3>
+    <label><input type="radio" name="q5" value="uiux"> Designing user experiences</label><br>
+    <label><input type="radio" name="q5" value="web"> Coding websites</label><br>
+    <label><input type="radio" name="q5" value="data"> Analyzing data</label><br>
+    <label><input type="radio" name="q5" value="iot"> Working with smart devices</label><br>
+
+    <!-- Q6 -->
+    <h3>6. What do you prefer learning?</h3>
+    <label><input type="radio" name="q6" value="cloud"> How systems run in the cloud</label><br>
+    <label><input type="radio" name="q6" value="cyber"> How to secure systems</label><br>
+    <label><input type="radio" name="q6" value="it"> How computers are maintained</label><br>
+    <label><input type="radio" name="q6" value="ai"> How machines learn</label><br>
+
+    <!-- Q7 -->
+    <h3>7. What feels easier for you?</h3>
+    <label><input type="radio" name="q7" value="uiux"> Visual thinking</label><br>
+    <label><input type="radio" name="q7" value="ai"> Logical reasoning</label><br>
+    <label><input type="radio" name="q7" value="game"> Creativity and imagination</label><br>
+    <label><input type="radio" name="q7" value="it"> Fixing technical issues</label><br>
+
+    <!-- Q8 -->
+    <h3>8. What would you rather build?</h3>
+    <label><input type="radio" name="q8" value="web"> Websites</label><br>
+    <label><input type="radio" name="q8" value="mobile"> Mobile apps</label><br>
+    <label><input type="radio" name="q8" value="game"> Games</label><br>
+    <label><input type="radio" name="q8" value="cloud"> Cloud systems</label><br>
+
+    <!-- Q9 -->
+    <h3>9. What interests you more?</h3>
+    <label><input type="radio" name="q9" value="uiux"> Colors and design</label><br>
+    <label><input type="radio" name="q9" value="data"> Data and insights</label><br>
+    <label><input type="radio" name="q9" value="cyber"> Security and hacking defense</label><br>
+    <label><input type="radio" name="q9" value="iot"> Smart connected devices</label><br>
+
+    <!-- Q10 -->
+    <h3>10. Final choice vibe:</h3>
+    <label><input type="radio" name="q10" value="ai"> Solving complex problems</label><br>
+    <label><input type="radio" name="q10" value="web"> Building user experiences</label><br>
+    <label><input type="radio" name="q10" value="mobile"> Creating mobile apps</label><br>
+    <label><input type="radio" name="q10" value="cyber"> Protecting systems</label><br>
+
+    <br><br>
+    <button type="submit">See My Result</button>
+
+</form>
+</div>
+</body>
+</html>

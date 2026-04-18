@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TechPath</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Header / Hero section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Find Your Future Impact</h1>
+        <p>Explore career-focused technology tracks and choose the right path for your future.</p>
+        <div class="hero-buttons">
+
+  <a href="#tracks" class="hero-button">
+    Explore Tracks
+  </a>
+
+  <a href="/quiz" class="hero-button quiz-button">
+    Not Sure? Take a Quiz
+  </a>
+
+</div>
+    </div>
+</section>
+<section id="tracks">
+    <h2>Our Career Tracks</h2>
+
+<ul>
+    <li class="data">
+    <img src="{{ url_for('static', filename='data.png.png') }}" alt="Data Science" width="50">
+    Data Science - <a href="/track/data">Learn More</a>
+</li>
+
+<li class="cyber">
+    <img src="{{ url_for('static', filename='cyber.png.png') }}" alt="Cybersecurity" width="50">
+    Cybersecurity - <a href="/track/cyber">Learn More</a>
+</li>
+
+<li class="ai">
+    <img src="{{ url_for('static', filename='ai.png.png') }}" alt="AI & Machine Learning" width="50">
+    AI & Machine Learning - <a href="/track/ai">Learn More</a>
+</li>
+
+<li class="mobile">
+    <img src="{{ url_for('static', filename='mobile.png.png') }}" alt="Mobile Development" width="50">
+    Mobile Development - <a href="/track/mobile">Learn More</a>
+</li>
+
+<li class="it">
+    <img src="{{ url_for('static', filename='it.png.png') }}" alt="IT Support" width="50">
+    IT Support - <a href="/track/it">Learn More</a>
+</li>
+    <li class="web">
+        <img src="{{ url_for('static', filename='web.png.png') }}" alt="Web Dev" width="50">
+        Web Development - <a href="/track/web">Learn More</a>
+    </li>
+    <li class="uiux">
+        <img src="{{ url_for('static', filename='UIUX.png.png') }}" alt="UI/UX" width="50">
+        UI/UX Design - <a href="/track/uiux">Learn More</a>
+    </li>
+    <li class="cloud">
+        <img src="{{ url_for('static', filename='cloud.png.png') }}" alt="Cloud" width="50">
+        Cloud Computing - <a href="/track/cloud">Learn More</a>
+    </li>
+
+        <li class="game">
+    <img src="{{ url_for('static', filename='game.png.png') }}" alt="Game Development" width="50">
+    Game Development - <a href="/track/game">Learn More</a>
+</li>
+<li class="iot">
+    <img src="{{ url_for('static', filename='iot.png.png') }}" alt="Internet of Things (IoT)" width="50">
+    Internet of Things (IoT) - <a href="/track/iot">Learn More</a>
+</li>
+    </li>
+</ul>
+</section>
+</body>
+</html>
+

@@ -1,0 +1,522 @@
+/* General body style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fc;
+    color: #333;
+    margin: 0;
+    padding: 0 20px;
+}
+
+/* Headings */
+h1 {
+    color: #2c3e50;
+}
+
+h2, h3 {
+    color: #34495e;
+}
+
+/* Links */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+    /* Track list as cards */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* space between cards */
+    flex-wrap: wrap; /* wrap cards to next line if needed */
+}
+
+ul li {
+    background-color: #ffffff; /* white card */
+    border-radius: 12px; /* rounded corners */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15); /* soft shadow */
+    padding: 20px;
+    width: 200px; /* card width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s; /* smooth hover effect */
+}
+
+ul li:hover {
+    transform: translateY(-5px); /* card lifts slightly on hover */
+}
+
+ul li img {
+    width: 80px; /* bigger image on card */
+    margin-bottom: 10px;
+}
+/* Colored cards */
+ul li.web {
+    background-color: #FFD700; /* gold/yellow */
+}
+
+ul li.uiux {
+    background-color: #FF69B4; /* pink */
+}
+
+ul li.cloud {
+    background-color: #87CEFA; /* light blue */
+}
+ul li.data {
+    background-color: #32CD32; /* green */
+}
+
+ul li.cyber {
+    background-color: #FF4500; /* orange */
+}
+
+ul li.ai {
+    background-color: #8A2BE2; /* purple */
+}
+
+ul li.mobile {
+    background-color: #FF1493; /* pinkish */
+}
+
+ul li.it {
+    background-color: #1E90FF; /* deep blue */
+}
+/* Color cards for new tracks */
+ul li.game {
+    background-color: #FFB347; /* Orange for Game Development */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+ul li.iot {
+    background-color: #76C7C0; /* Teal for IoT */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Optional: make text readable on colored background */
+ul li a, ul li {
+    color: #000; /* black text */
+    text-decoration: none;
+}
+/* Header / Hero section */
+.header {
+    text-align: center;
+    background-color: #4B79A1; /* nice blue gradient base */
+    background: linear-gradient(90deg, #4B79A1, #283E51);
+    color: #fff; /* white text */
+    padding: 50px 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+/* Track Page Styling */
+
+/* ===== TRACK PAGE ===== */
+
+.track-page {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+}
+
+/* HERO SECTION */
+.track-hero {
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.track-hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.track-hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* CONTENT SECTION */
+.track-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+/* CARD DESIGN */
+.track-card {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.track-card:hover {
+    transform: translateY(-8px);
+}
+
+.track-card h2 {
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.track-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.track-card li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* BACK BUTTON */
+.back-container {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.back-btn {
+    background: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #0056b3;
+}
+.track-hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.track-hero::before,
+.track-hero::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.track-hero::before {
+    top: -50px;
+    left: -50px;
+}
+
+.track-hero::after {
+    bottom: -50px;
+    right: -50px;
+}
+/* ===== MAIN HERO SECTION ===== */
+
+.hero {
+    position: relative;
+    height: auto;
+    padding: 80px 20px; /* control spacing instead */
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Floating background shapes */
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+}
+
+.hero::before {
+    top: -80px;
+    left: -80px;
+}
+
+.hero::after {
+    bottom: -100px;
+    right: -100px;
+}
+
+.hero-content {
+    max-width: 700px;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background: white;
+    color: #007BFF;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-3px);
+}
+.track-meaning {
+    margin-top: 25px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.track-meaning h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.track-meaning p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.hero-button {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* normal button */
+.hero-button {
+  background-color: #6375ff;
+  color: white;
+}
+
+/* quiz button */
+.quiz-button {
+  background-color: #6375ff;
+}
+
+.quiz-button:hover,
+.hero-button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+
+/* POPUP BACKGROUND */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+/* POPUP BOX */
+.popup-content {
+    background: white;
+    width: 320px;
+    margin: 15% auto;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+}
+
+/* CLOSE BUTTON */
+.close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* OPTIONS */
+.option {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #0056b3;
+}
+quiz-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0  10px  30px
+    rgba(0, 0, 0, 1);
+
+}
+h3{
+    margin-top: 25px;
+    color: #2c3e50;
+}
+label{
+    display: block;
+    background: #f5f7ff;
+    padding: 10px 12px;
+    margin: 5px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+label:hover {
+    background: #e8edff;
+    border-color:#4a6cf7 ;
+
+}
+input[type="radio"] {
+    margin-right:10px ;
+}
+button[type="submit"] {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #4a6cf7, #6c63ff);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* ===== HERO FIXES ===== */
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+details {
+    background: #f8f9ff;
+    margin: 10px 0;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #e0e4ff;
+    transition: 0.3s;
+}
+
+summary {
+    font-weight: 600;
+    font-size: 16px;
+    color: #2c2c2c;
+    cursor: pointer;
+}
+details p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+details[open] {
+    background: #eef2ff;
+    border-color: #6c63ff;
+}
+summary::marker {
+    color: #6c63ff;
+}
+
+.quiz-container {
+    max-width: 800px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.quiz-container label {
+    display: block;
+    background: #f7f9ff;
+    padding: 14px 18px;
+    margin: 10px 0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border: 2px solid transparent;
+    font-size: 15px;
+}
+
+.quiz-container label:hover {
+    background: #eef3ff;
+    border-color: #4a6cf7;
+    transform: translateY(-2px);
+}
